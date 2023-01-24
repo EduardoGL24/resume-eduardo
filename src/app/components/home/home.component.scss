@@ -1,0 +1,213 @@
+.home-main-container{
+  height: 100vh;
+  width: 100%;
+  background-image: url(../../../assets/images/home.jpg);
+  background-size: cover;
+  .home-section-container{
+    height: 100%;
+    text-align: center;
+    padding: 16% 0;
+    font-weight: 500;
+    color: #FFF;
+    h1{
+      font-size: 55px;
+      margin-bottom: 5%;
+    }
+    h2{ font-size: 45px; }
+  }
+  .about-me-container{
+    min-height: 100vh;
+    padding: 0 7%;
+    padding-top: 14%;
+    .about-image-container{
+      text-align: center;
+      img{
+        width: 60%;
+        border: 1px solid #FFF;
+      }
+    }
+    .about-text-container{
+      padding: 0 20% 0 0;
+      color: #FFF;
+      h2{
+        font-size: 45px;
+        margin-bottom: 4%;
+      }
+      p{
+        font-size: 19px;
+      }
+    }
+  }
+  .skills-main-container{
+    text-align: center;
+    color: #FFF;
+    padding: 5% 7%;
+    h2{
+      margin-bottom: 7%;
+      font-size: 35px;
+    }
+    .skill-container{
+      width: 19.5%;
+      padding: 3%;
+      border: 1px solid #e1a87a;
+      display: inline-block;
+      margin: 2%;
+      box-shadow: 0px 0px 15px 0px rgba(255,255,255,0.75);
+      -webkit-box-shadow: 0px 0px 15px 0px rgba(255,255,255,0.75);
+      -moz-box-shadow: 0px 0px 15px 0px rgba(255,255,255,0.75);
+      border-radius: 10px;
+      i{
+        margin-bottom: 15%;
+        color: #e1a87a;
+      }
+    }
+  }
+  .work-experience-container{
+    text-align: center;
+    padding: 5% 7%;
+    color: #FFF;
+    h2{
+      margin-bottom: 5%;
+    }
+    .experience-container{
+      box-shadow: 0px 0px 15px 0px rgba(255,255,255,0.75);
+      -webkit-box-shadow: 0px 0px 15px 0px rgba(255,255,255,0.75);
+      -moz-box-shadow: 0px 0px 15px 0px rgba(255,255,255,0.75);
+      border: 1px solid #e1a87a;
+      border-radius: 10px;
+      width: 70%;
+      margin-bottom: 10% !important;
+      float: right;
+      &:nth-child(even){
+        float: left;
+        .experience-title{
+          border-radius: 10px 0 0 10px;
+        }
+        .experience-information{
+          border-radius: 0 10px 10px 0;
+        }
+      }
+      label{
+        font-weight: 300;
+        font-size: 18px;
+        margin-bottom: 3%;
+      }
+      .experience-title{
+        border-radius: 0 10px 10px 0;
+        background-color: #e1a87a;
+        padding: 2%;
+        h4{
+          font-size: 30px;
+          font-weight: 500;
+        }
+      }
+      .experience-information{
+        border-radius: 10px 0 0 10px;
+        padding: 2%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 884px) {
+  .home-main-container{
+    .home-section-container{
+      padding-top: 30%;
+    }
+    .skills-main-container .skill-container{
+      width: 27%;
+    }
+    .work-experience-container .experience-container{
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .home-main-container{
+    .home-section-container{
+      padding-top: 35%;
+    }
+    .about-me-container{
+      padding-top: 20%;
+      .about-image-container{
+        margin-bottom: 15%;
+        img{
+          width: 85%;
+        }
+      } 
+    } 
+    .skills-main-container{
+      padding: 20% 5%;
+      h2{
+        margin-bottom: 15%;
+      }
+      .skill-container{
+        width: 42%;
+        margin-bottom: 7%;
+      }
+    }
+    .work-experience-container{
+      padding: 20% 5%;
+      .experience-container{
+        &:nth-child(even){
+          .experience-title{
+            border-radius: 10px 10px 0 0;
+          }
+          .experience-information{
+            border-radius: 0 0 10px 10px;
+          }
+        }
+        .experience-title{
+          border-radius: 0 0 10px 10px;
+          padding: 5%;
+        }
+        .experience-information{
+          border-radius: 10px 10px 0 0;
+          padding: 5%;
+        }
+      }
+      h2{
+        margin-bottom: 15%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .home-main-container{
+    padding-top: 25%;
+    .home-section-container{
+      h1{
+        font-size: 45px;
+      }
+      h2{
+        font-size: 37px;
+      }
+    }
+    .about-me-container .about-text-container{
+      h2{
+        font-size: 40px;
+      }
+      p{
+        font-size: 15px;
+      }
+    }
+    .skills-main-container{
+      h2{
+        margin-bottom: 20%;
+      }
+      .skill-container{
+        width: 80%;
+      }
+    }
+    .work-experience-container{
+      h2{
+        margin-bottom: 20%;
+      }
+      .experience-container{
+        margin-bottom: 15% !important;
+      }
+    }
+  }
+}
